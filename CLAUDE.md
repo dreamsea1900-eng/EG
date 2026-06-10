@@ -13,7 +13,7 @@
 ## 專案資源
 
 ### Design System Token 來源
-`design-system/collections.json`
+`design-system/design-tokens.json`
 — 由 Figma Variable Collections 匯出的設計系統資料（顏色、字級、間距等 token 定義），
 綁定 Token（狀態一）時應以此檔案內容為準。
 
@@ -26,7 +26,7 @@
 
 此專案會持續調整與擴充，後續任務應將以下方向納入考量：
 
-- **字級 style 調整**：`design-system/collections.json` 中的 Typography token 定義可能變動，
+- **字級 style 調整**：`design-system/design-tokens.json` 中的 Typography token 定義可能變動，
   需同步檢視綁定規則與輸出樣式
 - **CSS token 名稱調整**：Design Token 對應到 CSS 變數的命名規則可能變更，
   需確保 Figma 綁定與程式碼輸出兩端命名一致
@@ -35,6 +35,9 @@
 
 ## Figma MCP 操作注意事項
 
-- 進行 Token 綁定前，先讀取 `design-system/collections.json` 確認當前 Variable 定義
+- 進行 Token 綁定前，先讀取 `design-system/design-tokens.json` 確認當前 Variable 定義
 - 產出 HTML 程式碼時，遵循 `.claude/skills/shadcn/SKILL.md` 的元件與樣式規範
 - 若 Token 命名或字級規則有更新，優先以本檔案與 `design-system/` 下最新資料為準
+- 為頁面套用 Token 綁定（狀態一）並一一對應時，文字圖層需同時套用對應的 Figma Text Styles
+  （`Text/H2/Bold` ~ `Text/H8/Regular`，定義於 `design-system/figma-text-styles-todo.md`）
+- 未來建立新的 Variable Collections（Primitive/Semantic）時，應一併建立對應的 Figma Text Styles
