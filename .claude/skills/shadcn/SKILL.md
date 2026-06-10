@@ -28,7 +28,7 @@ The JSON above contains the project config and installed components. Use `npx sh
 
 ## EG 設計系統 Token 對照（Figma ↔ Tailwind）
 
-> 完整 token 定義見 `design-system/design-tokens.json`（Figma Variables：Primitive + Semantic collections）與 `design-system/design-tokens-reference.md`（z-index、breakpoint、container query、banner aspect-ratio、gradient、shadow 等複合值）。兩者皆來源自 `web-casino-eg` 的 `globals.css`/`utility.css`。**產出 HTML（狀態二）時，優先使用下列 brand token class，而非 shadcn 預設的數字尺寸（如 `p-4`、`text-sm`）**，以與 `web-casino-eg` 保持一致。
+> 完整 token 定義見 `design-system/design-tokens.json`（Figma Variables：Primitive collection）與 `design-system/design-tokens-reference.md`（z-index、breakpoint、container query、banner aspect-ratio、gradient、shadow 等複合值）。兩者皆來源自 `web-casino-eg` 的 `globals.css`/`utility.css`。**產出 HTML（狀態二）時，優先使用下列 brand token class，而非 shadcn 預設的數字尺寸（如 `p-4`、`text-sm`）**，以與 `web-casino-eg` 保持一致。
 
 ### Primitive — 品牌色
 

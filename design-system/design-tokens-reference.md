@@ -5,7 +5,7 @@
 
 這些 token 在 Figma 繪製時**不會有對應的可綁定變數**，但在「狀態二」產出 HTML/CSS 時，請直接套用以下對照值，確保與 `web-casino-eg` 一致。
 
-> 與 `design-tokens.json`（Primitive + Semantic collections）配合使用，兩者皆來源自 `web-casino-eg` 的 `globals.css`。
+> 與 `design-tokens.json`（Primitive collection）配合使用，兩者皆來源自 `web-casino-eg` 的 `globals.css`。
 
 ---
 
