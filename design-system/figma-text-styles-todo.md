@@ -19,6 +19,8 @@
 | H7 / Medium | 12 / 16 | Medium (500) | `text-brand-h7 font-medium` | 標籤、輔助說明（強調）|
 | H7 / Regular | 12 / 16 | Regular (400) | `text-brand-h7` | 標籤、輔助說明（最高頻）|
 | H8 / Regular | 10 / 10 | Regular (400) | `text-brand-h8` | 極小文字（如 Badge 數字）|
+| H3 / Semibold | 24 / 32 | Semibold (600) | `text-brand-h3 font-semibold` | 標題（如 Login Modal 標題）|
+| H6 / Semibold | 14 / 20 | Semibold (600) | `text-brand-h6 font-semibold` | 強調按鈕文字（如 Login Modal 登入按鈕）|
 
 ## 建立方式備註
 
