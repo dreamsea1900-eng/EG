@@ -1,0 +1,1718 @@
+[
+  {
+    "id": "VariableCollectionId:primitive",
+    "name": "Primitive",
+    "modes": [
+      {
+        "name": "Mode 1",
+        "modeId": "mode:primitive-1"
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:brand-grey-01",
+        "name": "Color/Brand/Grey/01",
+        "description": "--color-brand-grey-01 #323745",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.1961,
+            "g": 0.2157,
+            "b": 0.2706,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-grey-02",
+        "name": "Color/Brand/Grey/02",
+        "description": "--color-brand-grey-02 #9ba3bb",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.6063,
+            "g": 0.6396,
+            "b": 0.733,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-grey-03",
+        "name": "Color/Brand/Grey/03",
+        "description": "--color-brand-grey-03 #212c3e",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.1294,
+            "g": 0.1725,
+            "b": 0.2431,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-blue-01",
+        "name": "Color/Brand/Blue/01",
+        "description": "--color-brand-blue-01 #00deff",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0,
+            "g": 0.8706,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-blue-02",
+        "name": "Color/Brand/Blue/02",
+        "description": "--color-brand-blue-02 #3a9ff3",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.2275,
+            "g": 0.6235,
+            "b": 0.9529,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-yellow-01",
+        "name": "Color/Brand/Yellow/01",
+        "description": "--color-brand-yellow-01 #fce405",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.9882,
+            "g": 0.8941,
+            "b": 0.0196,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-yellow-02",
+        "name": "Color/Brand/Yellow/02",
+        "description": "--color-brand-yellow-02 #e8ae00",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.9098,
+            "g": 0.6824,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-yellow-03",
+        "name": "Color/Brand/Yellow/03",
+        "description": "--color-brand-yellow-03 #e87e00",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.9098,
+            "g": 0.4941,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-yellow-04",
+        "name": "Color/Brand/Yellow/04",
+        "description": "--color-brand-yellow-04 #c38100",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.7647,
+            "g": 0.5059,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-secondary-02",
+        "name": "Color/Brand/Secondary-02",
+        "description": "--color-brand-secondary-02 #69d876",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.4118,
+            "g": 0.8471,
+            "b": 0.4627,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-warn",
+        "name": "Color/Brand/Warn",
+        "description": "--color-brand-warn #e53935",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.898,
+            "g": 0.2235,
+            "b": 0.2078,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-bg",
+        "name": "Color/Brand/BG",
+        "description": "--color-brand-bg #1b1e28",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0.1059,
+            "g": 0.1176,
+            "b": 0.1569,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-100",
+        "name": "Color/White/100",
+        "description": "--color-brand-white #ffffff",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-mask",
+        "name": "Color/Brand/Mask",
+        "description": "--color-brand-mask rgb(0 0 0 / 70%)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.7
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-primary",
+        "name": "Color/Brand/Primary",
+        "description": "--color-brand-primary = var(--color-brand-blue-01)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-blue-01"
+          }
+        }
+      },
+      {
+        "id": "VariableID:brand-secondary-01",
+        "name": "Color/Brand/Secondary-01",
+        "description": "--color-brand-secondary-01 = var(--color-brand-yellow-01)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-yellow-01"
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-4",
+        "name": "Color/White/4",
+        "description": "White at 4% opacity — Tailwind `white/4` or `brand-white/4`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.04
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-5",
+        "name": "Color/White/5",
+        "description": "White at 5% opacity — Tailwind `white/5` or `brand-white/5`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-6",
+        "name": "Color/White/6",
+        "description": "White at 6% opacity — Tailwind `white/6` or `brand-white/6`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.06
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-8",
+        "name": "Color/White/8",
+        "description": "White at 8% opacity — Tailwind `white/8` or `brand-white/8`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.08
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-9",
+        "name": "Color/White/9",
+        "description": "White at 9% opacity — Tailwind `white/9` or `brand-white/9`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.09
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-10",
+        "name": "Color/White/10",
+        "description": "White at 10% opacity — Tailwind `white/10` or `brand-white/10`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.1
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-12",
+        "name": "Color/White/12",
+        "description": "White at 12% opacity — Tailwind `white/12` or `brand-white/12`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.12
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-15",
+        "name": "Color/White/15",
+        "description": "White at 15% opacity — Tailwind `white/15` or `brand-white/15`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.15
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-16",
+        "name": "Color/White/16",
+        "description": "White at 16% opacity — Tailwind `white/16` or `brand-white/16`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.16
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-20",
+        "name": "Color/White/20",
+        "description": "White at 20% opacity — Tailwind `white/20` or `brand-white/20`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.2
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-30",
+        "name": "Color/White/30",
+        "description": "White at 30% opacity — Tailwind `white/30` or `brand-white/30`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.3
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-40",
+        "name": "Color/White/40",
+        "description": "White at 40% opacity — Tailwind `white/40` or `brand-white/40`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-50",
+        "name": "Color/White/50",
+        "description": "White at 50% opacity — Tailwind `white/50` or `brand-white/50`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.5
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-55",
+        "name": "Color/White/55",
+        "description": "White at 55% opacity — Tailwind `white/55` or `brand-white/55`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.55
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-65",
+        "name": "Color/White/65",
+        "description": "White at 65% opacity — Tailwind `white/65` or `brand-white/65`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.65
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-70",
+        "name": "Color/White/70",
+        "description": "White at 70% opacity — Tailwind `white/70` or `brand-white/70`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.7
+          }
+        }
+      },
+      {
+        "id": "VariableID:white-80",
+        "name": "Color/White/80",
+        "description": "White at 80% opacity — Tailwind `white/80` or `brand-white/80`",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:primitive-1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.8
+          }
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-sm",
+        "name": "Radius/Brand/sm",
+        "description": "--radius-brand-sm",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 4
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-md",
+        "name": "Radius/Brand/md",
+        "description": "--radius-brand-md",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 8
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-lg",
+        "name": "Radius/Brand/lg",
+        "description": "--radius-brand-lg",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 16
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-xl",
+        "name": "Radius/Brand/xl",
+        "description": "--radius-brand-xl",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 24
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-2xl",
+        "name": "Radius/Brand/2xl",
+        "description": "--radius-brand-2xl",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 32
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-3xl",
+        "name": "Radius/Brand/3xl",
+        "description": "--radius-brand-3xl",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 128
+        }
+      },
+      {
+        "id": "VariableID:radius-brand-4xl",
+        "name": "Radius/Brand/4xl",
+        "description": "--radius-brand-4xl",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 360
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-0",
+        "name": "Spacing/Brand/0",
+        "description": "--spacing-brand-0",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 2
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-1",
+        "name": "Spacing/Brand/1",
+        "description": "--spacing-brand-1",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 4
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-2",
+        "name": "Spacing/Brand/2",
+        "description": "--spacing-brand-2",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 8
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-3",
+        "name": "Spacing/Brand/3",
+        "description": "--spacing-brand-3",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 16
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-4",
+        "name": "Spacing/Brand/4",
+        "description": "--spacing-brand-4",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 24
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-5",
+        "name": "Spacing/Brand/5",
+        "description": "--spacing-brand-5",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 32
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-6",
+        "name": "Spacing/Brand/6",
+        "description": "--spacing-brand-6",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 40
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-7",
+        "name": "Spacing/Brand/7",
+        "description": "--spacing-brand-7",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 48
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-8",
+        "name": "Spacing/Brand/8",
+        "description": "--spacing-brand-8",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 56
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-9",
+        "name": "Spacing/Brand/9",
+        "description": "--spacing-brand-9",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 64
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-10",
+        "name": "Spacing/Brand/10",
+        "description": "--spacing-brand-10",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 72
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-11",
+        "name": "Spacing/Brand/11",
+        "description": "--spacing-brand-11",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 80
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-12",
+        "name": "Spacing/Brand/12",
+        "description": "--spacing-brand-12",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 88
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-13",
+        "name": "Spacing/Brand/13",
+        "description": "--spacing-brand-13",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 96
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-14",
+        "name": "Spacing/Brand/14",
+        "description": "--spacing-brand-14",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 104
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-15",
+        "name": "Spacing/Brand/15",
+        "description": "--spacing-brand-15",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 200
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-16",
+        "name": "Spacing/Brand/16",
+        "description": "--spacing-brand-16",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 320
+        }
+      },
+      {
+        "id": "VariableID:spacing-brand-17",
+        "name": "Spacing/Brand/17",
+        "description": "--spacing-brand-17",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 400
+        }
+      },
+      {
+        "id": "VariableID:height-brand-2xs",
+        "name": "Height/Brand/2xs",
+        "description": "--height-brand-2xs",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 28
+        }
+      },
+      {
+        "id": "VariableID:height-brand-xs",
+        "name": "Height/Brand/xs",
+        "description": "--height-brand-xs",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 32
+        }
+      },
+      {
+        "id": "VariableID:height-brand-sm",
+        "name": "Height/Brand/sm",
+        "description": "--height-brand-sm",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 36
+        }
+      },
+      {
+        "id": "VariableID:height-brand-md",
+        "name": "Height/Brand/md",
+        "description": "--height-brand-md",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 40
+        }
+      },
+      {
+        "id": "VariableID:height-brand-lg",
+        "name": "Height/Brand/lg",
+        "description": "--height-brand-lg",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 44
+        }
+      },
+      {
+        "id": "VariableID:height-brand-xl",
+        "name": "Height/Brand/xl",
+        "description": "--height-brand-xl",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 52
+        }
+      },
+      {
+        "id": "VariableID:height-brand-2xl",
+        "name": "Height/Brand/2xl",
+        "description": "--height-brand-2xl (新增，程式碼大量使用 h-[60px] 但 globals.css 尚未定義)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 60
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h1",
+        "name": "Font Size/Brand/h1",
+        "description": "--text-brand-h1",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 40
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h1-lh",
+        "name": "Line Height/Brand/h1",
+        "description": "--text-brand-h1--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 48
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h2",
+        "name": "Font Size/Brand/h2",
+        "description": "--text-brand-h2",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 32
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h2-lh",
+        "name": "Line Height/Brand/h2",
+        "description": "--text-brand-h2--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 40
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h3",
+        "name": "Font Size/Brand/h3",
+        "description": "--text-brand-h3",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 24
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h3-lh",
+        "name": "Line Height/Brand/h3",
+        "description": "--text-brand-h3--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 32
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h4",
+        "name": "Font Size/Brand/h4",
+        "description": "--text-brand-h4",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 20
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h4-lh",
+        "name": "Line Height/Brand/h4",
+        "description": "--text-brand-h4--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 28
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h5",
+        "name": "Font Size/Brand/h5",
+        "description": "--text-brand-h5",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 16
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h5-lh",
+        "name": "Line Height/Brand/h5",
+        "description": "--text-brand-h5--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 24
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h6",
+        "name": "Font Size/Brand/h6",
+        "description": "--text-brand-h6",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 14
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h6-lh",
+        "name": "Line Height/Brand/h6",
+        "description": "--text-brand-h6--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 20
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h7",
+        "name": "Font Size/Brand/h7",
+        "description": "--text-brand-h7",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 12
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h7-lh",
+        "name": "Line Height/Brand/h7",
+        "description": "--text-brand-h7--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 16
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h8",
+        "name": "Font Size/Brand/h8",
+        "description": "--text-brand-h8",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 10
+        }
+      },
+      {
+        "id": "VariableID:text-brand-h8-lh",
+        "name": "Line Height/Brand/h8",
+        "description": "--text-brand-h8--line-height",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 10
+        }
+      },
+      {
+        "id": "VariableID:font-weight-thin",
+        "name": "Font Weight/thin",
+        "description": "--font-weight-thin (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 100
+        }
+      },
+      {
+        "id": "VariableID:font-weight-extralight",
+        "name": "Font Weight/extralight",
+        "description": "--font-weight-extralight (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 200
+        }
+      },
+      {
+        "id": "VariableID:font-weight-light",
+        "name": "Font Weight/light",
+        "description": "--font-weight-light (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 300
+        }
+      },
+      {
+        "id": "VariableID:font-weight-normal",
+        "name": "Font Weight/normal",
+        "description": "--font-weight-normal (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 400
+        }
+      },
+      {
+        "id": "VariableID:font-weight-medium",
+        "name": "Font Weight/medium",
+        "description": "--font-weight-medium (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 500
+        }
+      },
+      {
+        "id": "VariableID:font-weight-semibold",
+        "name": "Font Weight/semibold",
+        "description": "--font-weight-semibold (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 600
+        }
+      },
+      {
+        "id": "VariableID:font-weight-bold",
+        "name": "Font Weight/bold",
+        "description": "--font-weight-bold (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 700
+        }
+      },
+      {
+        "id": "VariableID:font-weight-extrabold",
+        "name": "Font Weight/extrabold",
+        "description": "--font-weight-extrabold (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 800
+        }
+      },
+      {
+        "id": "VariableID:font-weight-black",
+        "name": "Font Weight/black",
+        "description": "--font-weight-black (CSS 通用 token，無 brand 前綴)",
+        "variableCollectionId": "VariableCollectionId:primitive",
+        "resolvedType": "FLOAT",
+        "valuesByMode": {
+          "mode:primitive-1": 900
+        }
+      }
+    ]
+  },
+  {
+    "id": "VariableCollectionId:semantic",
+    "name": "Semantic",
+    "modes": [
+      {
+        "name": "Dark",
+        "modeId": "mode:semantic-dark"
+      },
+      {
+        "name": "Light",
+        "modeId": "mode:semantic-light"
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:sem-background",
+        "name": "background",
+        "description": "--background = var(--color-brand-bg)（兩模式相同）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-bg"
+          },
+          "mode:semantic-light": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-bg"
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-foreground",
+        "name": "foreground",
+        "description": "--foreground = var(--color-brand-white)（兩模式相同）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          },
+          "mode:semantic-light": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-card",
+        "name": "card",
+        "description": "--card（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.0905,
+            "g": 0.0905,
+            "b": 0.0905,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-card-foreground",
+        "name": "card-foreground",
+        "description": "--card-foreground（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.0394,
+            "g": 0.0394,
+            "b": 0.0394,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-popover",
+        "name": "popover",
+        "description": "--popover（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.0905,
+            "g": 0.0905,
+            "b": 0.0905,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-popover-foreground",
+        "name": "popover-foreground",
+        "description": "--popover-foreground（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.0394,
+            "g": 0.0394,
+            "b": 0.0394,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-secondary",
+        "name": "secondary",
+        "description": "--secondary（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.1494,
+            "g": 0.1494,
+            "b": 0.1494,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9606,
+            "g": 0.9606,
+            "b": 0.9606,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-secondary-foreground",
+        "name": "secondary-foreground",
+        "description": "--secondary-foreground（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.0905,
+            "g": 0.0905,
+            "b": 0.0905,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-muted",
+        "name": "muted",
+        "description": "--muted（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.1494,
+            "g": 0.1494,
+            "b": 0.1494,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9606,
+            "g": 0.9606,
+            "b": 0.9606,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-muted-foreground",
+        "name": "muted-foreground",
+        "description": "--muted-foreground（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.6302,
+            "g": 0.6302,
+            "b": 0.6302,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.4515,
+            "g": 0.4515,
+            "b": 0.4515,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-accent",
+        "name": "accent",
+        "description": "--accent（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.1494,
+            "g": 0.1494,
+            "b": 0.1494,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9606,
+            "g": 0.9606,
+            "b": 0.9606,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-accent-foreground",
+        "name": "accent-foreground",
+        "description": "--accent-foreground（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.0905,
+            "g": 0.0905,
+            "b": 0.0905,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-destructive",
+        "name": "destructive",
+        "description": "--destructive（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 1,
+            "g": 0.3912,
+            "b": 0.4039,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9065,
+            "g": 0,
+            "b": 0.0422,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-border",
+        "name": "border",
+        "description": "--border（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.1
+          },
+          "mode:semantic-light": {
+            "r": 0.8982,
+            "g": 0.8982,
+            "b": 0.8982,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-input",
+        "name": "input",
+        "description": "--input（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.15
+          },
+          "mode:semantic-light": {
+            "r": 0.8982,
+            "g": 0.8982,
+            "b": 0.8982,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-ring",
+        "name": "ring",
+        "description": "--ring（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.4515,
+            "g": 0.4515,
+            "b": 0.4515,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.6302,
+            "g": 0.6302,
+            "b": 0.6302,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-chart-1",
+        "name": "chart-1",
+        "description": "--chart-1（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.0779,
+            "g": 0.2791,
+            "b": 0.9018,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9607,
+            "g": 0.2882,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-chart-2",
+        "name": "chart-2",
+        "description": "--chart-2（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0,
+            "g": 0.7388,
+            "b": 0.4893,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0,
+            "g": 0.5893,
+            "b": 0.5373,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-chart-3",
+        "name": "chart-3",
+        "description": "--chart-3（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.9943,
+            "g": 0.6021,
+            "b": 0,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.0637,
+            "g": 0.3067,
+            "b": 0.3937,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-chart-4",
+        "name": "chart-4",
+        "description": "--chart-4（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.6779,
+            "g": 0.2759,
+            "b": 1,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 1,
+            "g": 0.7273,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-chart-5",
+        "name": "chart-5",
+        "description": "--chart-5（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 1,
+            "g": 0.1246,
+            "b": 0.339,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9943,
+            "g": 0.6021,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-primary",
+        "name": "sidebar-primary",
+        "description": "--sidebar-primary（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.0779,
+            "g": 0.2791,
+            "b": 0.9018,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.0905,
+            "g": 0.0905,
+            "b": 0.0905,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-primary-foreground",
+        "name": "sidebar-primary-foreground",
+        "description": "--sidebar-primary-foreground（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-accent",
+        "name": "sidebar-accent",
+        "description": "--sidebar-accent（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.1494,
+            "g": 0.1494,
+            "b": 0.1494,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.9606,
+            "g": 0.9606,
+            "b": 0.9606,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-border",
+        "name": "sidebar-border",
+        "description": "--sidebar-border（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.1
+          },
+          "mode:semantic-light": {
+            "r": 0.8982,
+            "g": 0.8982,
+            "b": 0.8982,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-ring",
+        "name": "sidebar-ring",
+        "description": "--sidebar-ring（Light = :root 現值，待品牌化；Dark = .dark 現值，專案實際使用）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "r": 0.4515,
+            "g": 0.4515,
+            "b": 0.4515,
+            "a": 1
+          },
+          "mode:semantic-light": {
+            "r": 0.6302,
+            "g": 0.6302,
+            "b": 0.6302,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-primary",
+        "name": "primary",
+        "description": "--primary：Dark = var(--color-brand-blue-01)（品牌色）；Light = oklch 中性色（預留，待品牌化）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-blue-01"
+          },
+          "mode:semantic-light": {
+            "r": 0.0905,
+            "g": 0.0905,
+            "b": 0.0905,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-primary-foreground",
+        "name": "primary-foreground",
+        "description": "--primary-foreground：Dark = var(--color-brand-white)；Light = oklch 中性色（預留，待品牌化）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          },
+          "mode:semantic-light": {
+            "r": 0.9803,
+            "g": 0.9803,
+            "b": 0.9803,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar",
+        "name": "sidebar",
+        "description": "--sidebar = var(--color-brand-grey-01)（兩模式相同）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-grey-01"
+          },
+          "mode:semantic-light": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:brand-grey-01"
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-foreground",
+        "name": "sidebar-foreground",
+        "description": "--sidebar-foreground = var(--color-brand-white)（兩模式相同）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          },
+          "mode:semantic-light": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          }
+        }
+      },
+      {
+        "id": "VariableID:sem-sidebar-accent-foreground",
+        "name": "sidebar-accent-foreground",
+        "description": "--sidebar-accent-foreground = var(--color-brand-white)（.dark 未覆寫，沿用 :root，兩模式相同）",
+        "variableCollectionId": "VariableCollectionId:semantic",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "mode:semantic-dark": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          },
+          "mode:semantic-light": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:white-100"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -26,6 +26,137 @@ The JSON above contains the project config and installed components. Use `npx sh
 3. **Use built-in variants before custom styles.** `variant="outline"`, `size="sm"`, etc.
 4. **Use semantic colors.** `bg-primary`, `text-muted-foreground` — never raw values like `bg-blue-500`.
 
+## EG 設計系統 Token 對照（Figma ↔ Tailwind）
+
+> 完整 token 定義見 `design-system/design-tokens.json`（Figma Variables：Primitive + Semantic collections）與 `design-system/design-tokens-reference.md`（z-index、breakpoint、container query、banner aspect-ratio、gradient、shadow 等複合值）。兩者皆來源自 `web-casino-eg` 的 `globals.css`/`utility.css`。**產出 HTML（狀態二）時，優先使用下列 brand token class，而非 shadcn 預設的數字尺寸（如 `p-4`、`text-sm`）**，以與 `web-casino-eg` 保持一致。
+
+### Primitive — 品牌色
+
+| Figma 變數 | CSS 變數 | Tailwind class |
+|---|---|---|
+| `Color/Brand/Grey/01` | `--color-brand-grey-01` | `bg-brand-grey-01` / `text-brand-grey-01` / `border-brand-grey-01` |
+| `Color/Brand/Grey/02` | `--color-brand-grey-02` | `*-brand-grey-02` |
+| `Color/Brand/Grey/03` | `--color-brand-grey-03` | `*-brand-grey-03` |
+| `Color/Brand/Blue/01` | `--color-brand-blue-01` | `*-brand-blue-01` |
+| `Color/Brand/Blue/02` | `--color-brand-blue-02` | `*-brand-blue-02` |
+| `Color/Brand/Yellow/01~04` | `--color-brand-yellow-01~04` | `*-brand-yellow-01~04` |
+| `Color/Brand/Secondary-02` | `--color-brand-secondary-02` | `*-brand-secondary-02` |
+| `Color/Brand/Warn` | `--color-brand-warn` | `*-brand-warn` |
+| `Color/Brand/BG` | `--color-brand-bg` | `*-brand-bg`（= Semantic `background`） |
+| `Color/White/100` | `--color-brand-white` | `*-brand-white`（= Semantic `foreground`） |
+| `Color/Brand/Mask` | `--color-brand-mask` | `*-brand-mask`（黑 70%） |
+| `Color/Brand/Primary`（alias→Blue/01） | `--color-brand-primary` | `*-brand-primary` |
+| `Color/Brand/Secondary-01`（alias→Yellow/01） | `--color-brand-secondary-01` | `*-brand-secondary-01` |
+
+`*-` 代表 `bg-` / `text-` / `border-` / `fill-` 等依用途代換。
+
+### Primitive — White 透明度（17 級）
+
+| Figma 變數 | Tailwind class |
+|---|---|
+| `Color/White/4~80`（4,5,6,8,9,10,12,15,16,20,30,40,50,55,65,70,80） | `white/{N}` 或 `brand-white/{N}`（opacity modifier，無獨立 CSS 變數） |
+
+### Primitive — Radius
+
+| Figma 變數 | CSS 變數 | px | Tailwind class |
+|---|---|---|---|
+| `Radius/Brand/sm` | `--radius-brand-sm` | 4 | `rounded-brand-sm` |
+| `Radius/Brand/md` | `--radius-brand-md` | 8 | `rounded-brand-md` |
+| `Radius/Brand/lg` | `--radius-brand-lg` | 16 | `rounded-brand-lg` |
+| `Radius/Brand/xl` | `--radius-brand-xl` | 24 | `rounded-brand-xl` |
+| `Radius/Brand/2xl` | `--radius-brand-2xl` | 32 | `rounded-brand-2xl` |
+| `Radius/Brand/3xl` | `--radius-brand-3xl` | 128 | `rounded-brand-3xl` |
+| `Radius/Brand/4xl` | `--radius-brand-4xl` | 360 | `rounded-brand-4xl` |
+
+### Primitive — Spacing（0-17）
+
+| Figma 變數 | CSS 變數 | px | Tailwind class |
+|---|---|---|---|
+| `Spacing/Brand/0` | `--spacing-brand-0` | 2 | `-brand-0`（如 `p-brand-0`、`gap-brand-0`、`w-brand-0`...） |
+| `Spacing/Brand/1` | `--spacing-brand-1` | 4 | `-brand-1` |
+| `Spacing/Brand/2` | `--spacing-brand-2` | 8 | `-brand-2` |
+| `Spacing/Brand/3` | `--spacing-brand-3` | 16 | `-brand-3` |
+| `Spacing/Brand/4` | `--spacing-brand-4` | 24 | `-brand-4` |
+| `Spacing/Brand/5` | `--spacing-brand-5` | 32 | `-brand-5` |
+| `Spacing/Brand/6` | `--spacing-brand-6` | 40 | `-brand-6` |
+| `Spacing/Brand/7` | `--spacing-brand-7` | 48 | `-brand-7` |
+| `Spacing/Brand/8` | `--spacing-brand-8` | 56 | `-brand-8` |
+| `Spacing/Brand/9` | `--spacing-brand-9` | 64 | `-brand-9` |
+| `Spacing/Brand/10` | `--spacing-brand-10` | 72 | `-brand-10` |
+| `Spacing/Brand/11` | `--spacing-brand-11` | 80 | `-brand-11` |
+| `Spacing/Brand/12` | `--spacing-brand-12` | 88 | `-brand-12` |
+| `Spacing/Brand/13` | `--spacing-brand-13` | 96 | `-brand-13` |
+| `Spacing/Brand/14` | `--spacing-brand-14` | 104 | `-brand-14` |
+| `Spacing/Brand/15` | `--spacing-brand-15` | 200 | `-brand-15` |
+| `Spacing/Brand/16` | `--spacing-brand-16` | 320 | `-brand-16` |
+| `Spacing/Brand/17` | `--spacing-brand-17` | 400 | `-brand-17` |
+
+套用方式：將 `-brand-N` 接在 `p`/`m`/`gap`/`w`/`h`/`top`/`left`... 等 spacing 類 utility 後面，例如 `p-brand-4`、`gap-brand-2`、`mt-brand-10`。
+
+### Primitive — Height（元件高度）
+
+| Figma 變數 | CSS 變數 | px | Tailwind class |
+|---|---|---|---|
+| `Height/Brand/2xs` | `--height-brand-2xs` | 28 | `h-brand-2xs` |
+| `Height/Brand/xs` | `--height-brand-xs` | 32 | `h-brand-xs` |
+| `Height/Brand/sm` | `--height-brand-sm` | 36 | `h-brand-sm` |
+| `Height/Brand/md` | `--height-brand-md` | 40 | `h-brand-md` |
+| `Height/Brand/lg` | `--height-brand-lg` | 44 | `h-brand-lg` |
+| `Height/Brand/xl` | `--height-brand-xl` | 52 | `h-brand-xl` |
+| `Height/Brand/2xl`（新增） | `--height-brand-2xl` | 60 | `h-brand-2xl`（globals.css 尚未正式定義，程式碼目前用 `h-[60px]`；產 code 時優先用此變數，待工程端補上定義） |
+
+### Primitive — 字級 / 行高（h1-h8）
+
+| Figma 變數 | CSS 變數 | 字級/行高 (px) | Tailwind class |
+|---|---|---|---|
+| `Font Size/Brand/h1` + `Line Height/Brand/h1` | `--text-brand-h1` + `--text-brand-h1--line-height` | 40 / 48 | `text-brand-h1` |
+| `Font Size/Brand/h2` + `Line Height/Brand/h2` | `--text-brand-h2` + `--text-brand-h2--line-height` | 32 / 40 | `text-brand-h2` |
+| `Font Size/Brand/h3` + `Line Height/Brand/h3` | `--text-brand-h3` + `--text-brand-h3--line-height` | 24 / 32 | `text-brand-h3` |
+| `Font Size/Brand/h4` + `Line Height/Brand/h4` | `--text-brand-h4` + `--text-brand-h4--line-height` | 20 / 28 | `text-brand-h4` |
+| `Font Size/Brand/h5` + `Line Height/Brand/h5` | `--text-brand-h5` + `--text-brand-h5--line-height` | 16 / 24 | `text-brand-h5` |
+| `Font Size/Brand/h6` + `Line Height/Brand/h6` | `--text-brand-h6` + `--text-brand-h6--line-height` | 14 / 20 | `text-brand-h6` |
+| `Font Size/Brand/h7` + `Line Height/Brand/h7` | `--text-brand-h7` + `--text-brand-h7--line-height` | 12 / 16 | `text-brand-h7` |
+| `Font Size/Brand/h8` + `Line Height/Brand/h8` | `--text-brand-h8` + `--text-brand-h8--line-height` | 10 / 10 | `text-brand-h8` |
+
+### Primitive — 字重（語意命名）
+
+| Figma 變數 | CSS 變數 | 數值 | Tailwind class |
+|---|---|---|---|
+| `Font Weight/thin` | `--font-weight-thin` | 100 | `font-thin` |
+| `Font Weight/extralight` | `--font-weight-extralight` | 200 | `font-extralight` |
+| `Font Weight/light` | `--font-weight-light` | 300 | `font-light` |
+| `Font Weight/normal` | `--font-weight-normal` | 400 | `font-normal` |
+| `Font Weight/medium` | `--font-weight-medium` | 500 | `font-medium` |
+| `Font Weight/semibold` | `--font-weight-semibold` | 600 | `font-semibold` |
+| `Font Weight/bold` | `--font-weight-bold` | 700 | `font-bold` |
+| `Font Weight/extrabold` | `--font-weight-extrabold` | 800 | `font-extrabold` |
+| `Font Weight/black` | `--font-weight-black` | 900 | `font-black` |
+
+### Semantic — shadcn 語意色（Dark = 本專案實際使用；Light = 預留未來主題，待品牌化）
+
+| Figma 變數 | CSS 變數 | Tailwind class |
+|---|---|---|
+| `background` | `--background` | `bg-background` |
+| `foreground` | `--foreground` | `text-foreground` |
+| `card` / `card-foreground` | `--card` / `--card-foreground` | `bg-card` / `text-card-foreground` |
+| `popover` / `popover-foreground` | `--popover` / `--popover-foreground` | `bg-popover` / `text-popover-foreground` |
+| `primary` / `primary-foreground` | `--primary` / `--primary-foreground` | `bg-primary` / `text-primary-foreground` |
+| `secondary` / `secondary-foreground` | `--secondary` / `--secondary-foreground` | `bg-secondary` / `text-secondary-foreground` |
+| `muted` / `muted-foreground` | `--muted` / `--muted-foreground` | `bg-muted` / `text-muted-foreground` |
+| `accent` / `accent-foreground` | `--accent` / `--accent-foreground` | `bg-accent` / `text-accent-foreground` |
+| `destructive` | `--destructive` | `bg-destructive` / `text-destructive` |
+| `border` | `--border` | `border-border`（或簡寫 `border`） |
+| `input` | `--input` | `border-input` / `bg-input` |
+| `ring` | `--ring` | `ring-ring` |
+| `chart-1~5` | `--chart-1~5` | `bg-chart-1~5` / `fill-chart-1~5`（Chart 元件用） |
+| `sidebar` / `sidebar-foreground` | `--sidebar` / `--sidebar-foreground` | `bg-sidebar` / `text-sidebar-foreground` |
+| `sidebar-primary` / `sidebar-primary-foreground` | `--sidebar-primary` / `--sidebar-primary-foreground` | `bg-sidebar-primary` / `text-sidebar-primary-foreground` |
+| `sidebar-accent` / `sidebar-accent-foreground` | `--sidebar-accent` / `--sidebar-accent-foreground` | `bg-sidebar-accent` / `text-sidebar-accent-foreground` |
+| `sidebar-border` | `--sidebar-border` | `border-sidebar-border` |
+| `sidebar-ring` | `--sidebar-ring` | `ring-sidebar-ring` |
+
+> 複合值（z-index、breakpoint、container query、banner aspect-ratio、gradient、shadow）不在 Figma Variables 中，請參考 `design-system/design-tokens-reference.md`。
+
 ## Critical Rules
 
 These rules are **always enforced**. Each links to a file with Incorrect/Correct code pairs.
