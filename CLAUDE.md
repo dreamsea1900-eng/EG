@@ -40,4 +40,4 @@
 - 若 Token 命名或字級規則有更新，優先以本檔案與 `design-system/` 下最新資料為準
 - 為頁面套用 Token 綁定（狀態一）並一一對應時，文字圖層需同時套用對應的 Figma Text Styles
   （`Text/H2/Bold` ~ `Text/H8/Regular`，定義於 `design-system/figma-text-styles-todo.md`）
-- 未來建立新的 Variable Collections（Primitive/Semantic）時，應一併建立對應的 Figma Text Styles
+- 未來建立新的 Variable Collections（Primitive/Semantic）時，應一併建立對應的 Figma Text Styles 與 Color Styles
