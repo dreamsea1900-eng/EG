@@ -11,19 +11,26 @@
 
 ## Figma Variable 命名對應規則
 
-`design-tokens.json`（Primitive collection）中的變數命名統一加上 `Color/` 前綴並使用標準英文（如 `Color/Brand/BG`、`Color/White/100`），但在來源 Figma 檔案（如埃及站 `WWZXpJ3eZ6Wb3m3J52vJ0N`）中，實際 Variable 名稱可能不同，常見差異：
+`design-tokens.json`（Primitive collection）與來源 Figma 檔案（埃及站 `WWZXpJ3eZ6Wb3m3J52vJ0N`）的 Primitive 變數命名，已於 2026-06-12 完成對齊（重新命名 71 個變數），兩端命名規則現已一致：
 
-- 無 `Color/` 前綴：`Brand/bg`、`Brand/Grey/01`
-- 大小寫不同：`Brand/bg`（小寫 bg）對應 `Color/Brand/BG`
-- `Brand/` 與 `Color/` 前綴的保留：design-tokens.json 中 `Radius/Brand/*`、`Spacing/Brand/*`、`Height/Brand/*`、`Font Size/Brand/*`、`Line Height/Brand/*`、`Color/Brand/Grey|Blue|Yellow/*` 刻意保留 `Brand/`／`Color/` 前綴，是為了與 CSS 變數命名（如 `--radius-brand-sm`、`--color-brand-grey-01`，皆含 `brand`）對應，方便產出程式碼；埃及站實際 Figma 變數這些群組多為頂層命名（如 `Radius/sm`、`Grey/01`，無 `Brand/`/`Color/`）。**此差異為刻意設計，不需調整對齊**（2026-06-12 討論確認）。
+- `Color/` 前綴：所有顏色變數統一加上 `Color/` 前綴（如 `Color/Brand/BG`、`Color/White/100`、`Color/Brand/Grey/01`）
+- `Brand/` 前綴：Radius / Spacing / Height / Font Size / Line Height 統一加上 `Brand/` 前綴（如 `Radius/Brand/sm`、`Spacing/Brand/0`），對應 CSS 變數命名（`--radius-brand-sm` 等）
 
-**比對時請以色值（hex/rgba）為準，名稱差異不代表 token 不一致或脫節**。已確認案例：
+**尚未對齊的例外：Font Weight（9 個）**——design-tokens.json 用語意命名（`Font Weight/thin`~`Font Weight/black`），埃及站用數值命名（`Font Weight/100`~`Font Weight/900`），兩者數值一一對應但名稱不同，**目前刻意不調整**（改錯命名對應有導致字重定義錯置的風險）。比對時請以數值為準：
 
-| 來源檔案變數名稱 | design-tokens.json 名稱 | 色值 | 確認狀態 |
-|---|---|---|---|
-| `Brand/bg`（埃及站 Primitive） | `Color/Brand/BG` | `#1b1e28` | ✅ 已確認一致（2026-06-12） |
+| 埃及站名稱 | design-tokens.json 名稱 | 數值 |
+|---|---|---|
+| `Font Weight/100` | `Font Weight/thin` | 100 |
+| `Font Weight/200` | `Font Weight/extralight` | 200 |
+| `Font Weight/300` | `Font Weight/light` | 300 |
+| `Font Weight/400` | `Font Weight/normal` | 400 |
+| `Font Weight/500` | `Font Weight/medium` | 500 |
+| `Font Weight/600` | `Font Weight/semibold` | 600 |
+| `Font Weight/700` | `Font Weight/bold` | 700 |
+| `Font Weight/800` | `Font Weight/extrabold` | 800 |
+| `Font Weight/900` | `Font Weight/black` | 900 |
 
-若發現其他「看起來不吻合」的變數，建議先比對色值，再判斷是命名規則差異還是真正的脫節。
+若未來新增變數或發現其他「看起來不吻合」的命名，建議先比對數值/色值，再判斷是命名規則差異還是真正的脫節。
 
 ---
 
