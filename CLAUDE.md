@@ -41,3 +41,4 @@
 - 為頁面套用 Token 綁定（狀態一）並一一對應時，文字圖層需同時套用對應的 Figma Text Styles
   （`Text/H2/Bold` ~ `Text/H8/Regular`，定義於 `design-system/figma-text-styles-todo.md`）
 - 未來建立新的 Variable Collections（Primitive/Semantic）時，應一併建立對應的 Figma Text Styles 與 Color Styles
+- 將 RTL 頁面製作為 LTR 版本時，套用全域 `figma-rtl-to-ltr` skill（`~/.claude/skills/figma-rtl-to-ltr/`）的標準流程；`design-system/figma-rtl-ltr-conversion.md` 為本專案的實作案例記錄，可作為操作範例參考
