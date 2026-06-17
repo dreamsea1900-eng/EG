@@ -26,10 +26,20 @@
 — 由 Figma Variable Collections 匯出的設計系統資料（顏色、字級、間距等 token 定義），
 綁定 Token（狀態一）時應以此檔案內容為準。
 
+### Token 命名對照表
+`.claude/skills/design-tokens-reference.md`
+— Figma Variable 名稱 ↔ CSS 變數名稱的對照依據。
+狀態一（Token 綁定）確認 Variable 命名時、狀態二（程式碼產出）對應 Tailwind class 時均需參照。
+
 ### 工程師模組（程式碼產出依據）
 `.claude/skills/shadcn/SKILL.md`
 — shadcn/ui 元件與專案管理技能，產出 HTML/前端程式碼（狀態二）時自動載入並依循其規範
 （元件選用、`components.json`、registry、styling 慣例）。
+
+### Token 數值來源（工程端 repo）
+`/Users/huangziying/Documents/web-casino-eg`（GitLab：`gitlab.bulltech-repo.cc/frontend/zps/web-casino-eg`）
+— `design-tokens.json` 的所有數值來源於此 repo 的 `src/app/globals.css`（`@theme` 變數）與 `src/lib/tailwind/utility.css`。
+若 Token 數值需要更新或同步，應先 `git pull` 此 repo，再比對差異後更新 `design-system/design-tokens.json`。
 
 ## 未來擴充規劃
 
