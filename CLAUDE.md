@@ -51,3 +51,4 @@
   （`Text/H2/Bold` ~ `Text/H8/Regular`，定義於 `design-system/figma-text-styles-todo.md`）
 - 未來建立新的 Variable Collections（Primitive/Semantic）時，應一併建立對應的 Figma Text Styles 與 Color Styles
 - 將 RTL 頁面製作為 LTR 版本時，套用全域 `figma-rtl-to-ltr` skill（`~/.claude/skills/figma-rtl-to-ltr/`）的標準流程；`doc/figma-rtl-ltr-conversion.md` 為本專案的實作案例記錄，可作為操作範例參考
+- Figma 設計稿需準備手機與桌機兩個版本（主斷點 **1024px**）；狀態二產出程式碼時，responsive class 以 `md:` 為主要 breakpoint，詳細規則參照 `doc/responsive-breakpoints.md`
