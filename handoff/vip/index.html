@@ -80,14 +80,15 @@
           <img src="https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea" alt="VIP icon" class="absolute left-1/2 top-1/2 h-[161px] w-[142px] -translate-x-1/2 -translate-y-1/2 object-contain" />
         </div>
 
-        <!-- 外框：3 段式（cap-stretch-cap）。左右固定 48px 裝飾角不失真，中間 preserveAspectRatio=none 自由拉伸；defs 只在左段宣告，三段共用（同文件 id 全域共享） -->
+        <!-- 外框：3 段式（cap-stretch-cap），素材改用 Figma 手機原生 vip_frame_s.svg（343 寬，node 9955:28960）。
+             左右固定 48px 裝飾角不失真，中間 preserveAspectRatio=none 自由拉伸；defs 只在左段宣告，三段共用（同文件 id 全域共享） -->
         <div class="relative w-full overflow-hidden rounded-[30px] px-brand-3 pb-brand-4 pt-[64px]">
 
           <div class="absolute inset-0 flex">
             <!-- 左固定角：原圖 x=0~48 -->
             <svg class="h-full w-[48px] flex-none" viewBox="0 0 48 300" preserveAspectRatio="xMinYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <filter id="m_filter" x="0" y="0" width="1200" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="m_filter" x="0" y="0" width="343" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                   <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                   <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -97,43 +98,43 @@
                   <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.870588 0 0 0 0 1 0 0 0 0.67 0"/>
                   <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
                 </filter>
-                <radialGradient id="m_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600) rotate(90) scale(300 799.904)">
+                <radialGradient id="m_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(171.5) rotate(90) scale(300 228.639)">
                   <stop stop-color="#003C58"/>
                   <stop offset="0.783619" stop-color="#1B1E28"/>
                 </radialGradient>
-                <linearGradient id="m_border" x1="663.429" y1="3.45476e-07" x2="669.436" y2="279.466" gradientUnits="userSpaceOnUse">
+                <linearGradient id="m_border" x1="189.63" y1="3.45476e-07" x2="210.537" y2="278.023" gradientUnits="userSpaceOnUse">
                   <stop stop-color="#8EECFF" stop-opacity="0.8"/>
                   <stop offset="0.485896" stop-color="white" stop-opacity="0.4"/>
                   <stop offset="0.804874" stop-color="#1B1E28" stop-opacity="0"/>
                 </linearGradient>
-                <linearGradient id="m_fade" x1="598.251" y1="206" x2="598.361" y2="268.502" gradientUnits="userSpaceOnUse">
+                <linearGradient id="m_fade" x1="171" y1="206" x2="171.385" y2="268.5" gradientUnits="userSpaceOnUse">
                   <stop stop-color="#1B1E28" stop-opacity="0"/>
                   <stop offset="1" stop-color="#1B1E28"/>
                 </linearGradient>
               </defs>
               <g filter="url(#m_filter)">
-                <rect width="1200" height="300" rx="30" fill="url(#m_radial)"/>
-                <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
+                <rect width="343" height="300" rx="30" fill="url(#m_radial)"/>
+                <rect x="1" y="1" width="341" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
               </g>
-              <rect y="217" width="1200" height="83" fill="url(#m_fade)"/>
+              <rect y="217" width="343" height="83" fill="url(#m_fade)"/>
             </svg>
 
-            <!-- 中間拉伸：原圖 x=48~1152，preserveAspectRatio=none 自由拉伸填滿剩餘寬度 -->
-            <svg class="h-full flex-1 min-w-0" viewBox="48 0 1104 300" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- 中間拉伸：原圖 x=48~295，preserveAspectRatio=none 自由拉伸填滿剩餘寬度 -->
+            <svg class="h-full flex-1 min-w-0" viewBox="48 0 247 300" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#m_filter)">
-                <rect width="1200" height="300" rx="30" fill="url(#m_radial)"/>
-                <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
+                <rect width="343" height="300" rx="30" fill="url(#m_radial)"/>
+                <rect x="1" y="1" width="341" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
               </g>
-              <rect y="217" width="1200" height="83" fill="url(#m_fade)"/>
+              <rect y="217" width="343" height="83" fill="url(#m_fade)"/>
             </svg>
 
-            <!-- 右固定角：原圖 x=1152~1200 -->
-            <svg class="h-full w-[48px] flex-none" viewBox="1152 0 48 300" preserveAspectRatio="xMaxYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- 右固定角：原圖 x=295~343 -->
+            <svg class="h-full w-[48px] flex-none" viewBox="295 0 48 300" preserveAspectRatio="xMaxYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#m_filter)">
-                <rect width="1200" height="300" rx="30" fill="url(#m_radial)"/>
-                <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
+                <rect width="343" height="300" rx="30" fill="url(#m_radial)"/>
+                <rect x="1" y="1" width="341" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
               </g>
-              <rect y="217" width="1200" height="83" fill="url(#m_fade)"/>
+              <rect y="217" width="343" height="83" fill="url(#m_fade)"/>
             </svg>
           </div>
 
@@ -262,7 +263,7 @@
     <section class="flex flex-col gap-brand-4">
       <div class="flex items-center justify-end gap-brand-2">
         <p class="text-brand-h5 font-bold capitalize text-brand-white md:text-brand-h3">VIP獎勵</p>
-        <svg class="h-[25px] w-auto shrink-0 md:h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.3986 18.7858L27.7145 11.6239C26.8613 8.44082 23.977 6.22754 20.6815 6.22754H9.3192C6.02376 6.22754 3.13872 8.44082 2.28624 11.6239L0.602164 18.7858C0.170884 20.8399 1.35672 22.8898 3.354 23.5392L3.45264 23.5709C5.30088 24.1728 7.31688 23.3974 8.28672 21.7133L9.75192 19.5468C10.1198 18.9082 10.801 18.5143 11.5375 18.5143H18.4646C19.2012 18.5143 19.8823 18.9082 20.2502 19.5468L21.7154 21.7133C22.6853 23.3974 24.702 24.1728 26.5502 23.5709L26.6482 23.5392C28.6447 22.8898 29.8306 20.8399 29.4 18.7858H29.3986ZM11.3244 13.9863H8.96496V16.3457H6.9108V13.9863H4.55136V11.9335H6.9108V9.57482H8.96496V11.9335H11.3244V13.9863ZM21.719 9.08306C22.4333 9.08306 23.0122 9.66122 23.0122 10.3762C23.0122 11.0911 22.434 11.6679 21.719 11.6679C21.0041 11.6679 20.4274 11.0897 20.4274 10.3762C20.4274 9.66122 21.0055 9.08306 21.719 9.08306ZM19.1335 14.2534C18.42 14.2534 17.8411 13.6745 17.8411 12.9603C17.8411 12.246 18.42 11.6686 19.1335 11.6686C19.847 11.6686 20.4259 12.2475 20.4259 12.9603C20.4259 13.6745 19.8478 14.2534 19.1335 14.2534ZM21.719 16.8375C21.0055 16.8375 20.4274 16.2593 20.4274 15.5458C20.4274 14.8323 21.0055 14.2527 21.719 14.2527C22.4326 14.2527 23.0122 14.8308 23.0122 15.5458C23.0122 16.2607 22.434 16.8375 21.719 16.8375ZM24.3038 14.2534C23.5903 14.2534 23.0114 13.6745 23.0114 12.9603C23.0114 12.246 23.5896 11.6686 24.3038 11.6686C25.0181 11.6686 25.597 12.2475 25.597 12.9603C25.597 13.6731 25.0181 14.2534 24.3038 14.2534Z" fill="white"/></svg>
+        <svg class="h-[25px] w-auto shrink-0 md:h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.5 22.3496V24.4502H4.5V22.3496H25.5ZM20.251 10.7998L25.501 7.65039V20.25H4.5V7.65039L9.75 10.7998L15 4.5L20.251 10.7998Z" fill="white"/></svg>
       </div>
 
       <!-- 卡片 slider：6 張，左側為尚未達成（locked，opacity-50），右側為已達成/當前等級 -->
