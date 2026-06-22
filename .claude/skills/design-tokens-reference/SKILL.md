@@ -1,3 +1,8 @@
+---
+name: design-tokens-reference
+description: EG（web-casino-eg）專案的設計 token 對照參考，涵蓋無法在 Figma 建立 Variable 的複合值（Z-Index、Breakpoints、漸層、Shadow、Banner 尺寸等）。在進行 Token 綁定（狀態一）確認命名、或產出 HTML/CSS（狀態二）對應 token 值時使用。
+---
+
 # Design Tokens Reference（非 Figma 變數類）
 
 這份文件記錄 `web-casino-eg` 的 `src/app/globals.css` 中**無法／不適合做成 Figma Variable**的設計 token——
