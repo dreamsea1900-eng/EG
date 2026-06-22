@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VIP 主體 - 狀態二預覽</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      screens: {
+        'xs': '520px',
+        'sm': '768px',
+        'md': '1024px',
+        'lg': '1280px',
+        'xl': '1640px',
+      },
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          'brand-grey-01': '#323745',
+          'brand-grey-02': '#9ba3bb',
+          'brand-grey-03': '#212c3e',
+          'brand-blue-01': '#00deff',
+          'brand-blue-02': '#3a9ff3',
+          'brand-primary': '#00deff',
+          'brand-yellow-01': '#fce405',
+          'brand-yellow-02': '#e8ae00',
+          'brand-yellow-03': '#e87e00',
+          'brand-yellow-04': '#c38100',
+          'brand-secondary-01': '#fce405',
+          'brand-secondary-02': '#69d876',
+          'brand-bg': '#1b1e28',
+          'brand-white': '#ffffff',
+        },
+        spacing: {
+          'brand-0': '2px', 'brand-1': '4px', 'brand-2': '8px', 'brand-3': '16px',
+          'brand-4': '24px', 'brand-5': '32px', 'brand-6': '40px', 'brand-7': '48px',
+          'brand-8': '56px', 'brand-9': '64px', 'brand-10': '72px', 'brand-11': '80px',
+          'brand-12': '88px', 'brand-13': '96px', 'brand-14': '104px', 'brand-15': '200px',
+          'brand-16': '320px', 'brand-17': '400px',
+        },
+        borderRadius: {
+          'brand-sm': '4px', 'brand-md': '8px', 'brand-lg': '16px', 'brand-xl': '24px',
+          'brand-2xl': '32px', 'brand-3xl': '128px', 'brand-4xl': '360px',
+        },
+        fontSize: {
+          'brand-h1': ['40px', { lineHeight: '48px' }],
+          'brand-h2': ['32px', { lineHeight: '40px' }],
+          'brand-h3': ['24px', { lineHeight: '32px' }],
+          'brand-h4': ['20px', { lineHeight: '28px' }],
+          'brand-h5': ['16px', { lineHeight: '24px' }],
+          'brand-h6': ['14px', { lineHeight: '20px' }],
+          'brand-h7': ['12px', { lineHeight: '16px' }],
+          'brand-h8': ['10px', { lineHeight: '10px' }],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-brand-bg text-brand-white font-sans">
+
+  <div class="w-full max-w-[1520px] mx-auto flex flex-col gap-brand-6 md:gap-brand-15 overflow-x-hidden px-brand-3 min-[1240px]:px-0">
+
+    <!-- ============ Section 1: VIP 等級進度 ============ -->
+
+    <!-- Mobile (< md)：card wrapper 為 relative 容器，菱形從右上溢出 35px，info icon / LV / ID / 進度條在框內 -->
+    <section class="flex justify-center pt-[35px] md:hidden">
+      <!-- card wrapper：relative 容器，供菱形 absolute 定位 -->
+      <div class="relative w-full">
+
+        <!-- VIP 鑽石：相對 card wrapper，右側 16px，向上溢出 35px -->
+        <div class="absolute right-[16px] -top-[35px] z-10 h-[163px] w-[140px]">
+          <img src="https://www.figma.com/api/mcp/asset/5dfc0758-c24b-4446-a82b-e6d13caee9bb" alt="" class="absolute left-1/2 top-0 size-[140px] -translate-x-1/2" />
+          <img src="https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea" alt="VIP icon" class="absolute left-1/2 top-1/2 h-[161px] w-[142px] -translate-x-1/2 -translate-y-1/2 object-contain" />
+        </div>
+
+        <!-- 外框：3 段式（cap-stretch-cap）。左右固定 48px 裝飾角不失真，中間 preserveAspectRatio=none 自由拉伸；defs 只在左段宣告，三段共用（同文件 id 全域共享） -->
+        <div class="relative w-full overflow-hidden rounded-[30px] px-brand-3 pb-brand-4 pt-[64px]">
+
+          <div class="absolute inset-0 flex">
+            <!-- 左固定角：原圖 x=0~48 -->
+            <svg class="h-full w-[48px] flex-none" viewBox="0 0 48 300" preserveAspectRatio="xMinYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="m_filter" x="0" y="0" width="1200" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="4"/>
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.870588 0 0 0 0 1 0 0 0 0.67 0"/>
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+                </filter>
+                <radialGradient id="m_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600) rotate(90) scale(300 799.904)">
+                  <stop stop-color="#003C58"/>
+                  <stop offset="0.783619" stop-color="#1B1E28"/>
+                </radialGradient>
+                <linearGradient id="m_border" x1="663.429" y1="3.45476e-07" x2="669.436" y2="279.466" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#8EECFF" stop-opacity="0.8"/>
+                  <stop offset="0.485896" stop-color="white" stop-opacity="0.4"/>
+                  <stop offset="0.804874" stop-color="#1B1E28" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="m_fade" x1="598.251" y1="206" x2="598.361" y2="268.502" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1B1E28" stop-opacity="0"/>
+                  <stop offset="1" stop-color="#1B1E28"/>
+                </linearGradient>
+              </defs>
+              <g filter="url(#m_filter)">
+                <rect width="1200" height="300" rx="30" fill="url(#m_radial)"/>
+                <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
+              </g>
+              <rect y="217" width="1200" height="83" fill="url(#m_fade)"/>
+            </svg>
+
+            <!-- 中間拉伸：原圖 x=48~1152，preserveAspectRatio=none 自由拉伸填滿剩餘寬度 -->
+            <svg class="h-full flex-1 min-w-0" viewBox="48 0 1104 300" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#m_filter)">
+                <rect width="1200" height="300" rx="30" fill="url(#m_radial)"/>
+                <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
+              </g>
+              <rect y="217" width="1200" height="83" fill="url(#m_fade)"/>
+            </svg>
+
+            <!-- 右固定角：原圖 x=1152~1200 -->
+            <svg class="h-full w-[48px] flex-none" viewBox="1152 0 48 300" preserveAspectRatio="xMaxYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#m_filter)">
+                <rect width="1200" height="300" rx="30" fill="url(#m_radial)"/>
+                <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#m_border)" stroke-width="2"/>
+              </g>
+              <rect y="217" width="1200" height="83" fill="url(#m_fade)"/>
+            </svg>
+          </div>
+
+          <!-- info icon -->
+          <img src="https://www.figma.com/api/mcp/asset/7ea588cd-4daa-4949-9454-d9233870f85a" alt="" class="absolute left-[16px] top-[16px] z-10 size-[20px]" />
+
+        <!-- LV / ID -->
+        <div class="relative z-10 flex flex-col gap-brand-1">
+          <p class="text-brand-h2 font-extrabold italic text-brand-white">LV. 2</p>
+          <p class="text-brand-h5 font-bold capitalize text-brand-grey-02">ID1234567890</p>
+        </div>
+
+        <!-- 進度條 x3（行動版高度 16px） -->
+        <div class="relative z-10 mt-brand-3 flex flex-col items-end gap-brand-2">
+          <div class="flex w-full flex-col items-end gap-brand-2">
+            <p class="w-full text-right text-brand-h6 font-medium capitalize text-brand-white">存款次數</p>
+            <div class="relative h-[16px] w-full overflow-hidden rounded-brand-4xl bg-white/10">
+              <div class="absolute inset-y-0 right-0 rounded-brand-4xl bg-gradient-to-l from-brand-primary to-brand-blue-02" style="width: 15.1%"></div>
+              <div class="absolute inset-0 flex items-center justify-center text-brand-h7 font-medium text-brand-white">4 / 1212</div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col items-end gap-brand-2">
+            <p class="w-full text-right text-brand-h6 font-medium capitalize text-brand-white">存款總額</p>
+            <div class="relative h-[16px] w-full overflow-hidden rounded-brand-4xl bg-white/10">
+              <div class="absolute inset-y-0 right-0 rounded-brand-4xl bg-gradient-to-l from-brand-primary to-brand-blue-02" style="width: 15.1%"></div>
+              <div class="absolute inset-0 flex items-center justify-center text-brand-h7 font-medium text-brand-white">1500.00 / 12321</div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col items-end gap-brand-2">
+            <p class="w-full text-right text-brand-h6 font-medium capitalize text-brand-white">總投注額度</p>
+            <div class="relative h-[16px] w-full overflow-hidden rounded-brand-4xl bg-white/10">
+              <div class="absolute inset-y-0 right-0 rounded-brand-4xl bg-gradient-to-l from-brand-primary to-brand-blue-02" style="width: 15.1%"></div>
+              <div class="absolute inset-0 flex items-center justify-center text-brand-h7 font-medium text-brand-white">716.70 / 213123.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Desktop (lg+)：1200px 置中卡片，左側等級條 + 右側大型菱形圖示，背景裝飾外框絕對定位 -->
+    <!-- 註：依 Figma metadata，VIPCards 區塊為 1200px（1920px 畫面左右各 360px margin），
+         裝飾外框相對 Content 頂端 top:50px、高度 400px（延伸至 Content 底部下方 100px） -->
+    <section class="hidden md:flex md:justify-center">
+      <div class="relative isolate w-full max-w-[1200px]">
+        <!-- 裝飾外框 SVG：含邊框漸層淡出 + 底部背景色覆蓋漸層，1200×300px -->
+        <svg class="absolute left-0 top-[50px] z-0 w-full" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_i_9955_28957)">
+            <rect width="1200" height="300" rx="30" fill="url(#paint0_radial_9955_28957)"/>
+            <rect x="1" y="1" width="1198" height="298" rx="29" stroke="url(#paint1_linear_9955_28957)" stroke-width="2"/>
+          </g>
+          <rect y="217" width="1200" height="83" fill="url(#paint2_linear_9955_28957)"/>
+          <defs>
+            <filter id="filter0_i_9955_28957" x="0" y="0" width="1200" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="4"/>
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.870588 0 0 0 0 1 0 0 0 0.67 0"/>
+              <feBlend mode="normal" in2="shape" result="effect1_innerShadow_9955_28957"/>
+            </filter>
+            <radialGradient id="paint0_radial_9955_28957" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600) rotate(90) scale(300 799.904)">
+              <stop stop-color="#003C58"/>
+              <stop offset="0.783619" stop-color="#1B1E28"/>
+            </radialGradient>
+            <linearGradient id="paint1_linear_9955_28957" x1="663.429" y1="3.45476e-07" x2="669.436" y2="279.466" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8EECFF" stop-opacity="0.8"/>
+              <stop offset="0.485896" stop-color="white" stop-opacity="0.4"/>
+              <stop offset="0.804874" stop-color="#1B1E28" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear_9955_28957" x1="598.251" y1="206" x2="598.361" y2="268.502" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1B1E28" stop-opacity="0"/>
+              <stop offset="1" stop-color="#1B1E28"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <!-- info icon -->
+        <img src="https://www.figma.com/api/mcp/asset/7ea588cd-4daa-4949-9454-d9233870f85a" alt="" class="absolute left-[24px] top-[74px] z-10 size-[26px]" />
+
+        <div class="relative z-10 flex w-full items-end justify-center gap-brand-11 px-brand-8">
+        <!-- 等級條 -->
+        <div class="flex flex-1 min-w-0 flex-col items-end gap-brand-3">
+          <div class="flex w-full items-end justify-start gap-brand-5">
+            <p class="text-brand-h1 font-extrabold italic text-brand-white">LV. 2</p>
+            <p class="text-brand-h3 font-bold capitalize text-brand-grey-02">ID1234567890</p>
+          </div>
+
+          <!-- 進度條 x3 -->
+          <!-- 註：填充寬度依原設計皆為 102px / 674px（約 15.1%），實際應改為依資料動態計算 -->
+          <div class="flex w-full flex-col items-end gap-brand-2">
+            <p class="w-full text-right text-brand-h4 font-medium capitalize text-brand-white">存款次數</p>
+            <div class="relative h-[18px] w-full overflow-hidden rounded-full bg-white/10">
+              <div class="absolute inset-y-0 right-0 rounded-full bg-gradient-to-l from-brand-primary to-brand-blue-02" style="width: 15.1%"></div>
+              <div class="absolute inset-0 flex items-center justify-center text-brand-h7 font-medium text-brand-white">4 / 1212</div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col items-end gap-brand-2">
+            <p class="w-full text-right text-brand-h4 font-medium capitalize text-brand-white">存款總額</p>
+            <div class="relative h-[18px] w-full overflow-hidden rounded-full bg-white/10">
+              <div class="absolute inset-y-0 right-0 rounded-full bg-gradient-to-l from-brand-primary to-brand-blue-02" style="width: 15.1%"></div>
+              <div class="absolute inset-0 flex items-center justify-center text-brand-h7 font-medium text-brand-white">1500.00 / 12321</div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col items-end gap-brand-2">
+            <p class="w-full text-right text-brand-h4 font-medium capitalize text-brand-white">總投注額度</p>
+            <div class="relative h-[18px] w-full overflow-hidden rounded-full bg-white/10">
+              <div class="absolute inset-y-0 right-0 rounded-full bg-gradient-to-l from-brand-primary to-brand-blue-02" style="width: 15.1%"></div>
+              <div class="absolute inset-0 flex items-center justify-center text-brand-h7 font-medium text-brand-white">716.70 / 213123.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIP 鑽石圖示 -->
+        <div class="relative h-[350px] w-[300px] shrink-0">
+          <img src="https://www.figma.com/api/mcp/asset/5dfc0758-c24b-4446-a82b-e6d13caee9bb" alt="" class="absolute left-1/2 top-0 size-[300px] -translate-x-1/2" />
+          <img src="https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea" alt="VIP icon" class="absolute left-1/2 top-1/2 h-[344px] w-[304px] -translate-x-1/2 -translate-y-1/2 object-cover" />
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ Section 2: VIP 獎勵卡片 ============ -->
+    <section class="flex flex-col gap-brand-4">
+      <div class="flex items-center justify-end gap-brand-2">
+        <p class="text-brand-h5 font-bold capitalize text-brand-white md:text-brand-h3">VIP獎勵</p>
+        <svg class="h-[25px] w-auto shrink-0 md:h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.3986 18.7858L27.7145 11.6239C26.8613 8.44082 23.977 6.22754 20.6815 6.22754H9.3192C6.02376 6.22754 3.13872 8.44082 2.28624 11.6239L0.602164 18.7858C0.170884 20.8399 1.35672 22.8898 3.354 23.5392L3.45264 23.5709C5.30088 24.1728 7.31688 23.3974 8.28672 21.7133L9.75192 19.5468C10.1198 18.9082 10.801 18.5143 11.5375 18.5143H18.4646C19.2012 18.5143 19.8823 18.9082 20.2502 19.5468L21.7154 21.7133C22.6853 23.3974 24.702 24.1728 26.5502 23.5709L26.6482 23.5392C28.6447 22.8898 29.8306 20.8399 29.4 18.7858H29.3986ZM11.3244 13.9863H8.96496V16.3457H6.9108V13.9863H4.55136V11.9335H6.9108V9.57482H8.96496V11.9335H11.3244V13.9863ZM21.719 9.08306C22.4333 9.08306 23.0122 9.66122 23.0122 10.3762C23.0122 11.0911 22.434 11.6679 21.719 11.6679C21.0041 11.6679 20.4274 11.0897 20.4274 10.3762C20.4274 9.66122 21.0055 9.08306 21.719 9.08306ZM19.1335 14.2534C18.42 14.2534 17.8411 13.6745 17.8411 12.9603C17.8411 12.246 18.42 11.6686 19.1335 11.6686C19.847 11.6686 20.4259 12.2475 20.4259 12.9603C20.4259 13.6745 19.8478 14.2534 19.1335 14.2534ZM21.719 16.8375C21.0055 16.8375 20.4274 16.2593 20.4274 15.5458C20.4274 14.8323 21.0055 14.2527 21.719 14.2527C22.4326 14.2527 23.0122 14.8308 23.0122 15.5458C23.0122 16.2607 22.434 16.8375 21.719 16.8375ZM24.3038 14.2534C23.5903 14.2534 23.0114 13.6745 23.0114 12.9603C23.0114 12.246 23.5896 11.6686 24.3038 11.6686C25.0181 11.6686 25.597 12.2475 25.597 12.9603C25.597 13.6731 25.0181 14.2534 24.3038 14.2534Z" fill="white"/></svg>
+      </div>
+
+      <!-- 卡片 slider：6 張，左側為尚未達成（locked，opacity-50），右側為已達成/當前等級 -->
+      <!-- 卡寬行動版 280px／桌面版 300px；右側漸層遮罩代表有更多卡片可滑動 -->
+      <div class="relative min-w-0">
+        <div id="vip-cards" class="flex min-w-0 gap-[18px] overflow-x-auto pb-brand-2"></div>
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-l from-transparent to-[#1b1e28]"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#1b1e28]"></div>
+      </div>
+    </section>
+
+    <!-- ============ Section 3: 排行榜 ============ -->
+    <section class="flex flex-col items-end gap-brand-3 pb-brand-6 md:pb-brand-15">
+      <!-- Tab bar -->
+      <div class="flex h-[60px] w-full min-w-0 items-center justify-end gap-brand-5 overflow-x-auto rounded-brand-md bg-gradient-to-b from-brand-grey-01 to-brand-bg px-brand-4">
+        <span class="shrink-0 text-brand-h5 font-medium text-brand-grey-02">贏分榜</span>
+        <span class="shrink-0 text-brand-h5 font-medium text-brand-grey-02">倍數榜</span>
+        <span class="shrink-0 text-brand-h5 font-medium text-brand-grey-02">累積流水</span>
+        <span class="shrink-0 text-brand-h5 font-bold text-brand-white">最新投注</span>
+      </div>
+
+      <p class="text-brand-h4 font-bold capitalize text-brand-white">最新投注</p>
+
+      <!-- Table：桌面版 5 欄（贏分/贏分倍數/總投注數/玩家/遊戲） -->
+      <div class="hidden w-full flex-col items-center md:flex">
+        <div class="flex h-[60px] w-full items-center rounded-t-brand-lg border-b border-white/10 bg-gradient-to-b from-brand-grey-01 to-brand-bg px-brand-3 text-brand-h5 font-medium capitalize text-brand-grey-02">
+          <div class="flex-1">贏分</div>
+          <div class="flex-1 text-center">贏分倍數</div>
+          <div class="flex-1 text-center">總投注數</div>
+          <div class="flex-1 text-center">玩家</div>
+          <div class="flex-1 text-right">遊戲</div>
+        </div>
+        <div id="ranking-rows-desktop" class="flex w-full flex-col"></div>
+      </div>
+
+      <!-- Table：行動版 2 欄（贏分/遊戲） -->
+      <div class="flex w-full flex-col items-center md:hidden">
+        <div class="flex h-[60px] w-full items-center justify-between rounded-t-brand-lg border-b border-white/10 bg-gradient-to-b from-brand-grey-01 to-brand-bg px-brand-2 text-brand-h5 font-medium capitalize text-brand-grey-02">
+          <div>贏分</div>
+          <div class="text-right">遊戲</div>
+        </div>
+        <div id="ranking-rows-mobile" class="flex w-full flex-col"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // ---- VIP 獎勵卡片資料 ----
+    // 註：reward / progress 數值依設計畫面讀取，VIP2~VIP5 為畫面截圖估讀值，
+    //     待後續確認確切數字後更新（詳見 ../../design-system 中相關 todo 紀錄）。
+    const vipCards = [
+      { level: 'VIP 6', reward: '1000.00', locked: true,  progress: [['4', '存款次數'], ['1000.00', '存款總額'], ['1000.00', '總投注額度']] },
+      { level: 'VIP 5', reward: '1000.00', locked: true,  progress: [['4', '存款次數'], ['1000.00', '存款總額'], ['1000.00', '總投注額度']] },
+      { level: 'VIP 4', reward: '600.00',  locked: true,  progress: [['3', '存款次數'], ['600.00', '存款總額'],  ['600.00', '總投注額度']] },
+      { level: 'VIP 3', reward: '400.00',  locked: true,  progress: [['2', '存款次數'], ['400.00', '存款總額'],  ['400.00', '總投注額度']] },
+      { level: 'VIP 2', reward: '400.00',  locked: false, progress: [['2', '存款次數'], ['400.00', '存款總額'],  ['400.00', '總投注額度']] },
+      { level: 'VIP 1', reward: '300.00',  locked: false, progress: [['1', '存款次數'], ['200.00', '存款總額'],  ['100.00', '總投注額度']] },
+    ];
+
+    const privilegeItems = [
+      { tag: '最高2%', text: '每日打碼回饋' },
+      { tag: '最高2%', text: '每週存款回饋' },
+      { tag: '最高2%', text: '指定日期返現' },
+    ];
+
+    const cardCheckIcon = 'https://www.figma.com/api/mcp/asset/0df2f121-10d6-4c8a-af7f-b8bc24eae547';
+    const cardQuestionIcon = 'https://www.figma.com/api/mcp/asset/c43bd5bf-8b79-4b3f-8030-c104dad98464';
+    // icon 欄位：Figma 的 aaa2 小卡 layer 以 blend mode 合成，單獨匯出為透明 PNG。
+    // 改用桌面版同一張鑽石圖 (edf2b99c)，縮小顯示結果相同。
+    const cardVipIconUnlocked = {
+      ellipse: 'https://www.figma.com/api/mcp/asset/c99efbe7-fc66-4695-a6ac-e1fdf892e3a9',
+      icon: 'https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea',
+    };
+    const cardVipIconLocked = {
+      ellipse: 'https://www.figma.com/api/mcp/asset/3ea08a26-1eb0-4693-a56b-192ebde4c31b',
+      icon: 'https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea',
+    };
+
+    function renderVipCard(card) {
+      const icons = card.locked ? cardVipIconLocked : cardVipIconUnlocked;
+      const tagClass = card.locked
+        ? 'bg-brand-grey-02 text-brand-bg'
+        : 'bg-gradient-to-b from-brand-secondary-01 to-brand-secondary-02 text-brand-bg';
+      const rewardLabelClass = card.locked
+        ? 'text-brand-grey-02'
+        : 'bg-gradient-to-b from-brand-secondary-01 to-brand-secondary-02 bg-clip-text text-transparent';
+
+      const progressRows = card.progress.map(([value, label]) => `
+        <div class="flex h-[24px] items-center justify-end gap-brand-1">
+          <p class="text-brand-h5 font-medium capitalize text-brand-white whitespace-nowrap">${value}：${label}</p>
+          <span class="flex size-[24px] items-center justify-center rounded-brand-4xl bg-brand-grey-01">
+            <img src="${cardCheckIcon}" alt="" class="size-[12px]" />
+          </span>
+        </div>`).join('');
+
+      const privilegeRows = privilegeItems.map(p => `
+        <div class="flex w-full items-center justify-end gap-brand-1">
+          <span class="shrink-0 rounded-brand-sm bg-gradient-to-b from-brand-yellow-02 to-brand-yellow-03 px-brand-1 py-[2px] text-brand-h7 font-medium text-brand-white whitespace-nowrap">${p.tag}</span>
+          <p class="flex-1 text-right text-brand-h6 font-medium text-brand-white">${p.text}</p>
+          <img src="${cardQuestionIcon}" alt="" class="size-[20px]" />
+        </div>`).join('');
+
+      return `
+        <div class="flex w-[280px] shrink-0 flex-col items-center gap-brand-3 rounded-brand-xl border border-white/10 bg-gradient-to-b from-brand-grey-03 to-brand-bg px-brand-3 py-brand-4 backdrop-blur-[18px] md:w-[300px] ${card.locked ? 'opacity-50' : ''}">
+          <div class="flex w-full flex-col items-start gap-brand-2">
+            <div class="flex w-full items-start justify-between">
+              <span class="rounded-brand-md px-brand-2 py-brand-2 text-brand-h5 font-extrabold italic ${tagClass}">${card.level}</span>
+              <div class="relative h-[80px] w-[70px]">
+                <img src="${icons.ellipse}" alt="" class="absolute left-1/2 top-0 size-[70px] -translate-x-1/2" />
+                <img src="${icons.icon}" alt="" class="absolute left-1/2 top-1/2 h-[80px] w-[71px] -translate-x-1/2 -translate-y-1/2 object-cover" />
+              </div>
+            </div>
+            <div class="flex w-full flex-col items-end text-right capitalize">
+              <p class="w-full text-brand-h1 font-bold text-brand-white">${card.reward}</p>
+              <p class="w-full text-brand-h5 font-medium ${rewardLabelClass}">升等獎勵</p>
+            </div>
+          </div>
+          <div class="flex w-full flex-col items-end gap-brand-2">${progressRows}</div>
+          <div class="flex w-full flex-col items-center gap-brand-2">
+            <div class="flex w-full items-center justify-center gap-brand-2">
+              <div class="h-px min-w-0 flex-1 bg-white/10"></div>
+              <p class="shrink-0 bg-gradient-to-b from-brand-secondary-01 to-brand-secondary-02 bg-clip-text text-brand-h5 font-medium text-transparent whitespace-nowrap">VIP Privilege</p>
+              <div class="h-px min-w-0 flex-1 bg-white/10"></div>
+            </div>
+            ${privilegeRows}
+          </div>
+        </div>`;
+    }
+
+    document.getElementById('vip-cards').innerHTML = vipCards.map(renderVipCard).join('');
+
+    // ---- 排行榜資料（10 列，內容為設計稿預設佔位資料） ----
+    const rankingRows = Array.from({ length: 10 }, () => ({
+      win: '2.00', multiplier: '0.00x', bet: '2.00', player: '12xx456', game: 'Mafia mayhem',
+      gameImg: 'https://www.figma.com/api/mcp/asset/e71901ce-1f94-477b-a07e-2d9868a7e6f2',
+    }));
+
+    // 桌面版：5 欄
+    document.getElementById('ranking-rows-desktop').innerHTML = rankingRows.map(row => `
+      <div class="flex h-[60px] w-full items-center border-t border-white/10 bg-gradient-to-b from-brand-grey-01 to-brand-bg px-brand-3">
+        <div class="flex flex-1 items-center gap-brand-2">
+          <span class="text-brand-h5 font-medium text-brand-white">EGP</span>
+          <span class="text-brand-h5 font-medium text-brand-secondary-02">${row.win}</span>
+        </div>
+        <div class="flex-1 text-center text-brand-h5 font-medium text-brand-white">${row.multiplier}</div>
+        <div class="flex flex-1 items-center justify-center gap-brand-2">
+          <span class="text-brand-h5 font-medium text-brand-white">EGP</span>
+          <span class="text-brand-h5 font-medium text-brand-white">${row.bet}</span>
+        </div>
+        <div class="flex-1 text-center text-brand-h5 font-medium text-brand-white">${row.player}</div>
+        <div class="flex flex-1 items-center justify-end gap-brand-2">
+          <span class="text-brand-h5 font-medium text-brand-white whitespace-nowrap">${row.game}</span>
+          <img src="${row.gameImg}" alt="" class="size-[50px] rounded-[6.667px] object-cover" />
+        </div>
+      </div>`).join('');
+
+    // 行動版：2 欄（贏分／遊戲）
+    document.getElementById('ranking-rows-mobile').innerHTML = rankingRows.map(row => `
+      <div class="flex h-[60px] w-full items-center justify-between border-t border-white/10 bg-gradient-to-b from-brand-grey-01 to-brand-bg px-brand-2">
+        <div class="flex items-center gap-brand-1">
+          <span class="text-brand-h5 font-medium text-brand-white">EGP</span>
+          <span class="text-brand-h5 font-medium text-brand-secondary-02">${row.win}</span>
+        </div>
+        <div class="flex items-center justify-end gap-brand-1">
+          <span class="text-brand-h5 font-medium text-brand-white whitespace-nowrap">${row.game}</span>
+          <img src="${row.gameImg}" alt="" class="size-[50px] rounded-brand-md object-cover" />
+        </div>
+      </div>`).join('');
+  </script>
+
+</body>
+</html>
