@@ -22,5 +22,5 @@
 
 ## 建立方式備註
 
-- 對照表用途與 `figma-text-styles-todo.md` 相同：作為綁定 Token（狀態一）時的命名與用途參考
+- 對照表用途與已併入 `design-tokens-reference.md` 的 Text Styles 對照表相同：作為綁定 Token（狀態一）時的命名與用途參考
 - 完成對應綁定後，可將此檔案標記為已完成或刪除

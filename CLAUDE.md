@@ -27,9 +27,10 @@
 綁定 Token（狀態一）時應以此檔案內容為準。
 
 ### Token 命名對照表
-`.claude/skills/design-tokens-reference.md`
-— Figma Variable 名稱 ↔ CSS 變數名稱的對照依據。
+`design-system/design-tokens-reference.md`
+— Figma Variable 名稱 ↔ CSS 變數名稱的對照依據，含 Z-Index、Breakpoints、Gradient、Shadow 等無法做成 Figma Variable 的複合值。
 狀態一（Token 綁定）確認 Variable 命名時、狀態二（程式碼產出）對應 Tailwind class 時均需參照。
+對應的 `.claude/skills/design-tokens-reference/SKILL.md` 會說明何時／為何需要查這份資料並自動觸發提示。
 
 ### 工程師模組（程式碼產出依據）
 `.claude/skills/shadcn/SKILL.md`
@@ -58,7 +59,7 @@
 - 產出 HTML 程式碼時，遵循 `.claude/skills/shadcn/SKILL.md` 的元件與樣式規範
 - 若 Token 命名或字級規則有更新，優先以本檔案與 `design-system/` 下最新資料為準
 - 為頁面套用 Token 綁定（狀態一）並一一對應時，文字圖層需同時套用對應的 Figma Text Styles
-  （`Text/H2/Bold` ~ `Text/H8/Regular`，定義於 `design-system/figma-text-styles-todo.md`）
+  （`Text/H2/Bold` ~ `Text/H8/Regular`，定義於 `design-system/design-tokens-reference.md`「Text Styles」一節）
 - 未來建立新的 Variable Collections（Primitive/Semantic）時，應一併建立對應的 Figma Text Styles 與 Color Styles
 - 將 RTL 頁面製作為 LTR 版本時，套用全域 `figma-rtl-to-ltr` skill（`~/.claude/skills/figma-rtl-to-ltr/`）的標準流程；`doc/figma-rtl-ltr-conversion.md` 為本專案的實作案例記錄，可作為操作範例參考
 - Figma 設計稿需準備手機與桌機兩個版本（主斷點 **1024px**）；狀態二產出程式碼時，responsive class 以 `md:` 為主要 breakpoint，詳細規則參照 `doc/responsive-breakpoints.md`
