@@ -76,6 +76,8 @@ description: EG（web-casino-eg）專案的設計 token 對照參考，涵蓋無
 | Token | 值 |
 |---|---|
 | `--container-8xl` | 95rem（= 1520px） |
+| `--sidebar-width`（展開） | 300px（非 Figma token，來源：`web-casino-eg/src/lib/shadcn/Sidebar.tsx` `SIDEBAR_WIDTH` 常數） |
+| `--sidebar-width-icon`（收合） | 60px（同上，`SIDEBAR_WIDTH_ICON` 常數） |
 
 ---
 
