@@ -1,7 +1,7 @@
 # VIP 主體 — 狀態二產出備註
 
 來源：Figma `WWZXpJ3eZ6Wb3m3J52vJ0N`，node `9955:28696`（layout：title + VIP + Ranking）
-產出：`index.html`（可直接用瀏覽器開啟預覽）、`VipMain.tsx`（React + shadcn 規範）
+產出：`index.html`（可直接用瀏覽器開啟預覽，TSX 由工程端依此另行實作）
 
 ## 待確認事項
 
@@ -170,7 +170,10 @@
 
 ## 尚未處理（待後續回來處理）
 
-- `Header_Desktop`、`sidebar`、`footer_desktop`、`FloatButton`（全站共用元件，建議先確認工程端是否已有現成元件可重用，再決定是否需要重新產出）
+- ~~`Header_Desktop`、`sidebar`、`footer_desktop`~~：已查證 `web-casino-eg` 已有對應元件
+  （`src/components/Header`、`src/components/AppSidebar`、`src/components/Footer.tsx`），
+  **確認可直接沿用，不需設計端重新產出**
+- `FloatButton`：未在 `web-casino-eg` 找到對應元件，**仍需設計端產出**
 
 ## 與工程 Layout 整合注意（RWD Padding）
 
@@ -182,23 +185,25 @@
 | < 1520px（`@max-8xl`）| `px-brand-3`（16px） | 兩側各 16px 保護邊距 |
 | ≥ 1520px | 無 padding | 由 `max-w-[1520px] mx-auto` 置中 |
 
-**VIP 頁面各 Section 的 padding 在此基礎上的行為：**
+**VIP 頁面外層 wrapper（`index.html` line 68）已採用相同邏輯**：
+`px-brand-3 min-[1520px]:px-0`（門檻對齊 `--container-8xl` = 1520px），
+水平邊緣 padding 集中由這一處統一管理，Section 1/2/3 自身都不再帶水平 padding，
+工程整合時**不需要**額外移除任何 Section 的邊緣 padding：
 
-| Section | Handoff 中的 class | 整合後問題 | 建議處理 |
-|---|---|---|---|
-| Section 2/3（手機）| `px-brand-3`（16px）| layout 已提供 16px，疊加變 **32px**（過寬）| 工程整合時移除頁面的 `px-brand-3` |
-| Section 2/3（桌面）| `px-brand-15`（200px）| `main` 已是 1520px，再加 200px 兩側 → 內容只剩 **1120px**（過窄）| 工程整合時移除頁面的 `px-brand-15` |
-| Section 1（手機）| `px-brand-3`（16px）| 同 Section 2/3 手機版，疊加變 32px | 工程整合時移除 |
+| Section | 目前狀態 | 整合備註 |
+|---|---|---|
+| Section 2/3（手機／桌面）| 無水平 padding（已集中到外層 wrapper） | 無需處理 |
+| Section 1（手機）| 唯一的 `px-brand-3`（line 85）是裝飾卡片**內部**內距（讓 LV/ID 文字、進度條不貼齊卡片圓角），非邊緣 gutter | **保留**，不要移除，否則卡片內容會貼到圓角邊框 |
 | Section 1（桌面）| `max-w-[1200px] mx-auto` | 1520px main 內置中 1200px = 各 160px 內縮，加上 viewport 各 200px = 各 360px，與設計稿一致 ✓ | **保留**，無需調整 |
 
 **設計稿數字驗證（桌面 1920px）：**
 
 - Figma：Section 2/3 左右各 200px → 內容 1520px
-- 工程整合：`main` = 1520px，移除 `px-brand-15` → 內容自然填滿 1520px ✓
+- 工程整合：`main` = 1520px，Section 2/3 本身無 padding → 內容自然填滿 1520px ✓
 - Figma：Section 1 左右各 360px → 內容 1200px
 - 工程整合：`main` = 1520px，Section 1 `max-w-[1200px] mx-auto` → 160px + (1920-1520)/2 = 160+200 = 360px ✓
 
-**結論：工程整合時，除 Section 1 桌面版外，所有頁面自身的水平 padding 均應移除，由 layout 統一管理。**
+**結論：外層 wrapper 已是唯一的水平 padding 來源，門檻對齊 1520px；工程整合時除 Section 1 桌面版的 `max-w-[1200px]` 外，不需要再移除任何頁面層級的水平 padding。**
 
 ## Token 綁定狀態
 
