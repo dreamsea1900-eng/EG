@@ -1,12 +1,8 @@
 'use client'
 import { cn } from '@/lib/tailwind/utils'
 import RankingSection from './_components/RankingSection/RankingSection'
-import VipCard from './_components/VipCard/VipCard'
-import useVipController, {
-  type VipCardData,
-  type VipPrivilegeItem,
-  type VipProgressItem,
-} from './useVipController'
+import VipRewardSection from './_components/VipRewardSection/VipRewardSection'
+import useVipController, { type VipProgressItem } from './useVipController'
 
 // TODO: Figma 暫存 asset 連結，7 天後失效，正式交付前需下載至 /public（見 ../notes.md「待確認事項 5」）
 const INFO_ICON_URL = 'https://www.figma.com/api/mcp/asset/da15f278-0d3c-4338-9c63-45c5b520b2b4'
@@ -352,40 +348,4 @@ function DecorFrameDesktop() {
   )
 }
 
-function VipRewardSection({
-  cards,
-  privilegeItems,
-}: {
-  cards: VipCardData[]
-  privilegeItems: VipPrivilegeItem[]
-}) {
-  return (
-    <section className='flex flex-col gap-brand-4'>
-      <div className='flex items-center justify-end gap-brand-2'>
-        <p className='text-brand-h5 font-bold capitalize text-brand-white md:text-brand-h3'>VIP獎勵</p>
-        <svg
-          className='h-[25px] w-auto shrink-0 md:h-[30px]'
-          viewBox='0 0 30 30'
-          fill='none'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path
-            d='M25.5 22.3496V24.4502H4.5V22.3496H25.5ZM20.251 10.7998L25.501 7.65039V20.25H4.5V7.65039L9.75 10.7998L15 4.5L20.251 10.7998Z'
-            fill='white'
-          />
-        </svg>
-      </div>
-
-      <div className='relative min-w-0'>
-        <div className='flex min-w-0 gap-[18px] overflow-x-auto pb-brand-2'>
-          {cards.map((card, index) => (
-            <VipCard key={`${card.level}-${index}`} card={card} privilegeItems={privilegeItems} />
-          ))}
-        </div>
-        <div className='pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-l from-transparent to-[#1b1e28]' />
-        <div className='pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#1b1e28]' />
-      </div>
-    </section>
-  )
-}
 

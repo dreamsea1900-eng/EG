@@ -22,12 +22,15 @@
 草稿改用 `ToggleGroup`（`type='single'`）接上 `activeTab` 狀態，是唯一新增「真互動」的地方，
 其餘（卡片列表、進度條、表格列）都是純資料 render，沒有額外狀態。
 
-## 3. Progress 元件衝突
+## 3. Progress 元件衝突（前提已更正，待重新評估）
 
-`src/lib/shadcn/Progress.tsx` 的填充方向會跟著 `useDirection()`（LTR 由左至右、RTL 由右至左）。
-但這個設計是「不論語系都固定靠右填充」，跟元件預設行為衝突，所以**沒有使用** `Progress` 元件，
-維持自訂 markup（`ProgressRow`），並把百分比改成用 `current/target` 真實計算（取代原本三條都寫死 15.1%）。
-如果你們有別的方向需求處理慣例，這裡需要再對一次。
+原判斷「這個設計是不論語系都固定靠右填充，跟 `Progress` 元件 `useDirection()` 預設行為衝突」**前提有誤**。
+填充方向實際應隨語系方向鏡像（LTR／RTL 互換），不是寫死靠右；本頁「VIP 獎勵卡片」元件已有 Figma LTR
+對照節點驗證過這種鏡像（見 `../notes.md`「設計還原度修正（第六輪）」），但 Section 1 進度條本身尚未
+取得對應 LTR 節點核對，方向細節待確認。
+
+也就是說，「跟 `Progress` 元件預設行為衝突」這個避用理由不成立，是否改用 `Progress` 元件需要重新評估
+（與 current/target 百分比真實計算是兩件獨立的事，後者不受此更正影響，維持原樣）。
 
 ## 4. 尚未解決（原樣繼承自 notes.md）
 
