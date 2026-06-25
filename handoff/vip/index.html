@@ -76,8 +76,7 @@
 
         <!-- VIP 鑽石：相對 card wrapper，右側 16px，向上溢出 35px -->
         <div class="absolute right-[16px] -top-[35px] z-10 h-[163px] w-[140px]">
-          <img src="https://www.figma.com/api/mcp/asset/5dfc0758-c24b-4446-a82b-e6d13caee9bb" alt="" class="absolute left-1/2 top-0 size-[140px] -translate-x-1/2" />
-          <img src="https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea" alt="VIP icon" class="absolute left-1/2 top-1/2 h-[161px] w-[142px] -translate-x-1/2 -translate-y-1/2 object-contain" />
+          <img src="img/VIP icon_L.svg" alt="VIP icon" class="absolute inset-0 size-full" />
         </div>
 
         <!-- 外框：3 段式（cap-stretch-cap），素材改用 Figma 手機原生 vip_frame_s.svg（343 寬，node 9955:28960）。
@@ -139,7 +138,7 @@
           </div>
 
           <!-- info icon -->
-          <img src="https://www.figma.com/api/mcp/asset/7ea588cd-4daa-4949-9454-d9233870f85a" alt="" class="absolute left-[16px] top-[16px] z-10 size-[20px]" />
+          <img src="https://www.figma.com/api/mcp/asset/da15f278-0d3c-4338-9c63-45c5b520b2b4" alt="" class="absolute left-[16px] top-[16px] z-10 size-[20px]" />
 
         <!-- LV / ID -->
         <div class="relative z-10 flex flex-col gap-brand-1">
@@ -215,7 +214,7 @@
         </svg>
 
         <!-- info icon -->
-        <img src="https://www.figma.com/api/mcp/asset/7ea588cd-4daa-4949-9454-d9233870f85a" alt="" class="absolute left-[24px] top-[74px] z-10 size-[26px]" />
+        <img src="https://www.figma.com/api/mcp/asset/da15f278-0d3c-4338-9c63-45c5b520b2b4" alt="" class="absolute left-[24px] top-[74px] z-10 size-[26px]" />
 
         <div class="relative z-10 flex w-full items-end justify-center gap-brand-11 px-brand-8">
         <!-- 等級條 -->
@@ -252,8 +251,7 @@
 
         <!-- VIP 鑽石圖示 -->
         <div class="relative h-[350px] w-[300px] shrink-0">
-          <img src="https://www.figma.com/api/mcp/asset/5dfc0758-c24b-4446-a82b-e6d13caee9bb" alt="" class="absolute left-1/2 top-0 size-[300px] -translate-x-1/2" />
-          <img src="https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea" alt="VIP icon" class="absolute left-1/2 top-1/2 h-[344px] w-[304px] -translate-x-1/2 -translate-y-1/2 object-cover" />
+          <img src="img/VIP icon_L.svg" alt="VIP icon" class="absolute inset-0 size-full" />
         </div>
       </div>
       </div>
@@ -330,21 +328,11 @@
       { tag: '最高2%', text: '指定日期返現' },
     ];
 
-    const cardCheckIcon = 'https://www.figma.com/api/mcp/asset/0df2f121-10d6-4c8a-af7f-b8bc24eae547';
-    const cardQuestionIcon = 'https://www.figma.com/api/mcp/asset/c43bd5bf-8b79-4b3f-8030-c104dad98464';
-    // icon 欄位：Figma 的 aaa2 小卡 layer 以 blend mode 合成，單獨匯出為透明 PNG。
-    // 改用桌面版同一張鑽石圖 (edf2b99c)，縮小顯示結果相同。
-    const cardVipIconUnlocked = {
-      ellipse: 'https://www.figma.com/api/mcp/asset/c99efbe7-fc66-4695-a6ac-e1fdf892e3a9',
-      icon: 'https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea',
-    };
-    const cardVipIconLocked = {
-      ellipse: 'https://www.figma.com/api/mcp/asset/3ea08a26-1eb0-4693-a56b-192ebde4c31b',
-      icon: 'https://www.figma.com/api/mcp/asset/edf2b99c-48b4-4fdb-9e7e-cd72185f42ea',
-    };
+    const cardCheckIcon = 'https://www.figma.com/api/mcp/asset/51ab7ed4-2c02-4e24-b76e-d597e2d99d0a';
+    const cardQuestionIcon = 'https://www.figma.com/api/mcp/asset/8486b469-0cae-40da-aa53-d7371cd7c546';
+    const cardVipIconS = 'img/VIP icon_s.svg';
 
     function renderVipCard(card) {
-      const icons = card.locked ? cardVipIconLocked : cardVipIconUnlocked;
       const tagClass = card.locked
         ? 'bg-brand-grey-02 text-brand-bg'
         : 'bg-gradient-to-b from-brand-secondary-01 to-brand-secondary-02 text-brand-bg';
@@ -373,8 +361,7 @@
             <div class="flex w-full items-start justify-between">
               <span class="rounded-brand-md px-brand-2 py-brand-2 text-brand-h5 font-extrabold italic ${tagClass}">${card.level}</span>
               <div class="relative h-[80px] w-[70px]">
-                <img src="${icons.ellipse}" alt="" class="absolute left-1/2 top-0 size-[70px] -translate-x-1/2" />
-                <img src="${icons.icon}" alt="" class="absolute left-1/2 top-1/2 h-[80px] w-[71px] -translate-x-1/2 -translate-y-1/2 object-cover" />
+                <img src="${cardVipIconS}" alt="" class="absolute inset-0 size-full" />
               </div>
             </div>
             <div class="flex w-full flex-col items-end text-right capitalize">
@@ -399,7 +386,7 @@
     // ---- 排行榜資料（10 列，內容為設計稿預設佔位資料） ----
     const rankingRows = Array.from({ length: 10 }, () => ({
       win: '2.00', multiplier: '0.00x', bet: '2.00', player: '12xx456', game: 'Mafia mayhem',
-      gameImg: 'https://www.figma.com/api/mcp/asset/e71901ce-1f94-477b-a07e-2d9868a7e6f2',
+      gameImg: 'https://www.figma.com/api/mcp/asset/7564c12b-a045-4e98-b97e-5f058c7cd316',
     }));
 
     // 桌面版：5 欄
